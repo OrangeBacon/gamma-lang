@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "webpack",
     "build": "webpack -p",
-    "serve": "webpack-dev-server"
+    "serve": "webpack-dev-server",
+    "deploy": "git subtree push --prefix dist heroku master"
   },
   "repository": {
     "type": "git",

@@ -1,0 +1,10 @@
+{
+ "name": "blog",
+ "version": "1.0.0",
+ "description": "A custom programming language written in javascript for the browser",
+ "author": "William Moreton",
+ "private": true,
+ "scripts": {
+   "postinstall": "npm install express"
+ }
+}
