@@ -20,9 +20,9 @@
 */
 # all function arguments are required  //TODO
 let print-range = fn(start,stop) -> {
-  if start <= stop then {
+  if start &lt;= stop then {
     print(start);
-    if start + 1 <= stop then {
+    if start + 1 &lt;= stop then {
       print(", ");
       sleep(250);
       print-range(start + 1, stop);
