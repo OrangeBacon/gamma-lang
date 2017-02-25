@@ -1,0 +1,49 @@
+html,body {
+  padding:0;
+  margin:0;
+  height:100%;
+  width:100%;
+}
+.CodeMirror {
+  height:100%;
+}
+.CodeMirror-overlayscroll-vertical div {
+  background-color:#8F938F;
+}
+.CodeMirror div div.CodeMirror-selected { /*increase specificity*/
+  background-color:black!important;
+}
+#editor,#output {
+  width:50%;
+  float:left;
+  height:100%;
+  box-sizing:border-box;
+}
+#output {
+  height: calc(100% - 35px);
+  white-space: pre-wrap;
+  word-break: break-all;
+  font-family:monospace;
+  overflow:auto;
+  background-color: rgb(44, 40, 39);
+  border-left: 5px solid #34302f;
+  box-sizing:border-box;
+  color:#8F938F;
+}
+#run {
+  position:absolute;
+  width:50%;
+  height:35px;
+  right:0;
+  bottom:0;
+  box-sizing:border-box;
+  line-height:30px;
+  text-align:center;
+  border-left: 5px solid #34302f;
+  border-top: 5px solid #34302f;
+  background-color: rgb(44, 40, 39);
+  color:#8F938F;
+}
+.err {
+  background-color:red;
+}

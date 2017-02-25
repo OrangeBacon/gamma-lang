@@ -1,0 +1,65 @@
+<div id='editor'></div>
+<div id='output'></div>
+<div id='run'>run</div>
+<div id="example" hidden>
+#comment
+
+/*
+  this is also a comment
+*/
+# all function arguments are required  //TODO
+let print-range = fn(start,stop) -> {
+  if start <= stop then {
+    print(start);
+    if start + 1 <= stop then {
+      print(", ");
+      sleep(250);
+      print-range(start + 1, stop);
+    } else print("\n");
+  };
+};
+print-range(1,5);
+
+let max;
+/*
+  everything is an expression
+  this returns 3.14
+*/
+let pi = 3.14;
+
+let function = fn(x) -> {
+  # return = last expression
+  x;
+};
+
+let string = "hello world"
+  |> capitalise
+  |> increment
+  |> reverse;
+/*
+  equivalent to:
+  String.fromCharCode(...[...string.toUpperCase()].map(x=>x.charCodeAt(0)+1).reverse())
+  in JavaScript since strings act as arrays
+*/
+
+/*
+  closure
+  fn -> {} is short for fn() -> {}
+  variables in closure are not accessible outside
+*/
+(fn->{
+  # iife
+  # code
+})();
+# or simpler
+{
+  # code
+};
+
+/*
+  To make a vaiable mutable you must add the keyword mut;
+  by default let is immutable.
+*/
+let mut level = 0;
+</div>
+<script src='editor.js'></script>
